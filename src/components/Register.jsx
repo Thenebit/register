@@ -36,13 +36,13 @@ const Register = () => {
 
                     <div className='flex flex-col text-gray-400 py-2'>
                         <label>User Email</label>
-                        <input type='text' name='user_email' required className='rounded-lg bg-gray-700 mt-2 p-2 focus:border-blue-500 focus:bg-gray-800 focus:outline-none' />
+                        <input type='email' name='user_email' required className='rounded-lg bg-gray-700 mt-2 p-2 focus:border-blue-500 focus:bg-gray-800 focus:outline-none' />
                     </div>
 
                     <div className='flex flex-col text-gray-800 py-2'>
                         <label className=' text-gray-400'>Requirement</label>
-                        <select name="user_tool" placeholder="Choose....." required className='rounded-lg mt-2 p-2 focus:border-blue-500 focus:outline-none'>
-                            <option disabled>Choose.....</option>
+                        <select name="user_tool" required className='rounded-lg mt-2 p-2'>
+                            <option selected="true" disabled="disabled">Choose.....</option>
                             <option>I have a laptop or pc</option>
                             <option>Don't have any</option>
                         </select>
